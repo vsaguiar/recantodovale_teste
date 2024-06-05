@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(247, 245, 245);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    margin: 0;
+    width: 150px;
+    height: 100px;
+}
+
+section {
+    padding: 2em;
+    margin: 1em 0;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #444;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #eee;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0.5em 0;
+}
+
+footer {
+    background-color: #85ab7ea6;
+    color: white;
+    padding: 2em 0;
+}
+
+footer p {
+    margin: 0;
+    color: #333;
+}
+
+footer hr {
+    color: black;
+}
+
+.carousel-inner img {
+    max-height: 750px;
+    object-fit: cover;
+}
+
+#btnWhatsApp {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave para a propriedade transform */
+}
+
+#btnWhatsApp img {
+    width: 50px; /* Define a largura da imagem */
+    height: auto; /* Garante a proporção da imagem */
+}
+
+#btnWhatsApp:hover {
+    transform: scale(1.3); /* Aumenta a escala da imagem ao passar o mouse */
+}
+
+#instagram-menu, #whatsapp-menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave para a propriedade transform */
+}
+
+#instagram-menu i, #whatsapp-menu i {
+    margin-right: 0.2em;
+}
+
+#instagram-menu:hover i, #instagram-menu:hover span, #whatsapp-menu:hover i, #whatsapp-menu:hover span {
+    transform: scale(1.1);
+}
+
+#instagram-menu i, #instagram-menu span, #whatsapp-menu i, #whatsapp-menu span {
+    color: #365B32;
+}
+
+.font-caveat {
+    font-family: 'Caveat';
+    font-weight: bold;
+    font-size: 40px;
+    color: #365B32;
+}
+
+.font-couriernew {
+    font-family: 'Courier New';
+    font-size: 18px;
+}
+
+.titulo-footer {
+    font-family: 'Bree Serif';
+    font-size: 30px;
+    color: #365B32;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    padding-bottom: 22.25%;
+    position: relative;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.footer-instagram-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-instagram-menu i {
+    margin-right: 0.2em;
+}
+
+.footer-instagram-menu:hover i, .footer-instagram-menu:hover span {
+    transform: scale(1.1);
+    color: #ffffffe3;
+}
+
+.footer-instagram-menu i, .footer-instagram-menu span {
+    transition: color 0.3s ease-in-out;
+    color: #365B32;
+}
+
+/* Aplica o filtro de preto e branco e desfoque por padrão */
+.event-image {
+    filter: grayscale(100%) blur(3px);
+    transition: filter 0.5s ease, blur 0.5s ease;
+    width: 100%;
+}
+
+/* Remove o filtro ao passar o mouse */
+.event-image:hover {
+    filter: grayscale(0%) blur(0px);
+}
+
+/* Estilo da sobreposição */
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Adiciona uma transição para a opacidade */
+}
+
+/* Estilo do texto sobre a imagem */
+.overlay-text {
+    color: white;
+    font-size: 2em;
+    font-family: 'Bree Serif', serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5em 1em;
+    border-radius: 10px;
+}
+
+/* Esconde a sobreposição ao passar o mouse */
+.event-image:hover + .image-overlay {
+    opacity: 0; /* Altera a opacidade para 0 ao passar o mouse */
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    #instagram-menu, #whatsapp-menu {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+}
