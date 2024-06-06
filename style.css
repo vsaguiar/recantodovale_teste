@@ -201,6 +201,70 @@ footer hr {
     opacity: 0;
 }
 
+#btnGaleria {
+    color: white;
+    background-color: #59875D;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+#btnGaleria:hover {
+    background-color: #80a383;
+    transform: scale(1.1);
+}
+
+/* Remove a transformação de texto em letras maiúsculas */
+button, .btn {
+    text-transform: none !important;
+}
+
+.modal-body .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-body .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-img:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Estilo para centralizar a imagem em tela cheia */
+/* .modal-body.img-fullscreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+} */
+
+/* Estilo para a imagem em tela cheia */
+/* .modal-body.img-fullscreen img {
+    max-width: 90%;
+    max-height: auto;
+} */
+
+.imgModal {
+    margin: 0;
+    width: 100px;
+    height: 70px;
+}
+
+.imgModal:hover {
+    cursor: pointer;
+}
+
 
 @media (max-width: 1023px) {
     #instagram-menu, #whatsapp-menu {
