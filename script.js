@@ -1,5 +1,5 @@
 document.getElementById('btnWhatsApp').addEventListener('click', function() {
-    window.open('https://api.whatsapp.com/message/F2WQIX3GAQWPD1?autoload=1&app_absent=0', '_blank');
+    window.open('https://wa.me/5521972519639', '_blank');
 });
 
 document.getElementById('instagram-menu').addEventListener('click', function() {
@@ -11,5 +11,5 @@ document.getElementById('instagram-footer').addEventListener('click', function()
 });
 
 document.getElementById('whatsapp-menu').addEventListener('click', function() {
-    window.open('https://api.whatsapp.com/message/F2WQIX3GAQWPD1?autoload=1&app_absent=0', '_blank');
+    window.open('https://wa.me/5521972519639', '_blank');
 });
