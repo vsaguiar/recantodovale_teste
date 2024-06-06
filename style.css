@@ -167,14 +167,9 @@ footer hr {
 
 /* Aplica o filtro de preto e branco e desfoque por padrão */
 .event-image {
-    filter: grayscale(100%) blur(3px);
-    transition: filter 0.5s ease, blur 0.5s ease;
+    filter: grayscale(100%) blur(2px);
+    transition: filter 0.5s ease;
     width: 100%;
-}
-
-/* Remove o filtro ao passar o mouse */
-.event-image:hover {
-    filter: grayscale(0%) blur(0px);
 }
 
 /* Estilo da sobreposição */
@@ -184,7 +179,7 @@ footer hr {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
-    transition: opacity 0.5s ease; /* Adiciona uma transição para a opacidade */
+    transition: opacity 0.5s ease;
 }
 
 /* Estilo do texto sobre a imagem */
@@ -197,11 +192,15 @@ footer hr {
     border-radius: 10px;
 }
 
-/* Esconde a sobreposição ao passar o mouse */
-.event-image:hover + .image-overlay {
-    opacity: 0; /* Altera a opacidade para 0 ao passar o mouse */
-    display: none;
+/* Remove o filtro e esconde a sobreposição ao passar o mouse sobre o contêiner */
+.event-container:hover .event-image {
+    filter: grayscale(0%) blur(0px);
 }
+
+.event-container:hover .image-overlay {
+    opacity: 0;
+}
+
 
 @media (max-width: 1023px) {
     #instagram-menu, #whatsapp-menu {
